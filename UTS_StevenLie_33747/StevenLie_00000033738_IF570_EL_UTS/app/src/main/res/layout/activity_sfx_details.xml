@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SfxDetailsActivity">
+
+    <ImageView
+        android:id="@+id/SoundDetailPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152"
+        app:srcCompat="@drawable/baseline_volume_up_black_48" />
+
+    <TextView
+        android:id="@+id/soundDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SoundDetailPhoto"
+        tools:text="@string/sound_title" />
+
+    <TextView
+        android:id="@+id/soundDetailGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soundDetailTitle"
+        tools:text="@string/genre" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playSFX"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="36dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="64dp"
+        app:icon="@drawable/ic_baseline_play_arrow_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTint="#2196F3"
+        app:layout_constraintEnd_toStartOf="@+id/pauseFX"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soundDetailGenre"
+        app:strokeWidth="3dp"></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pauseFX"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="96dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="64dp"
+        app:icon="@drawable/ic_baseline_pause_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soundDetailGenre"
+        app:strokeWidth="3dp"></com.google.android.material.button.MaterialButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

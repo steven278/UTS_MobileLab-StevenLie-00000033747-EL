@@ -1,0 +1,40 @@
+package id.ac.umn.stevenlie_00000033738_if570_el_uts;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NavUtils;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
+import android.view.MenuItem;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+public class ProfileActivity extends AppCompatActivity {
+    TextView tvRef1, tvRef2;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_profile);
+        tvRef1 = findViewById(R.id.Ref1);
+        tvRef1.setMovementMethod(LinkMovementMethod.getInstance());
+        tvRef2 = findViewById(R.id.Ref2);
+        tvRef2.setMovementMethod(LinkMovementMethod.getInstance());
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Profile");
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+}

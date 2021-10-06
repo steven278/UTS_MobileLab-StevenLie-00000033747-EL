@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">StevenLie_00000033738_IF570_EL_UTS</string>
+    <string name="SFXLibraryAndPreviewer">SFX Library and Previewer</string>
+    <string name="Profile">PROFILE</string>
+    <string name="Library">LIBRARY</string>
+    <string name="LoginPage">LOGIN PAGE</string>
+    <string name="Next">NEXT</string>
+    <string name="InsertYourName">Masukkan Nama Anda...</string>
+    <string name="Profile_Name">Steven Lie</string>
+    <string name="mainMenu">MainMenu</string>
+    <string name="NIM">00000033747</string>
+    <string name="Class_Code">IF 570 - EL</string>
+    <string name="Reference">REFERENSI : </string>
+    <string name="Ref1"><a href="https://github.com/hdodenhof/CircleImageView">https://github.com/hdodenhof/CircleImageView</a></string>
+    <string name="Ref2"><a href="https://www.dicoding.com/academies/51">https://www.dicoding.com/academies/51</a></string>
+    <string name="Ref3"><a href="https://stackoverflow.com/">https://stackoverflow.com</a></string>
+    <string name="Ref4"><a href="https://www.youtube.com/watch?v=1JuKDk0d6zg">https://www.youtube.com/watch?v=1JuKDk0d6zg</a></string>
+    <string name="sound_title">Sound Title</string>
+    <string name="genre">Genre</string>
+    <string name="PlaySFX">Play SFX</string>
+    <string name="pauseSFX">Pause SFX</string>
+    <string name="youtube1"><a href="https://www.youtube.com/watch?v=Mq74pwq4-Dg">https://www.youtube.com/watch?v=Mq74pwq4-Dg</a></string>
+    <string name="youtube2"><a href="https://youtu.be/oh4YOj9VkVE">https://youtu.be/oh4YOj9VkVE</a></string>
+    <string name="youtube3"><a href="https://www.youtube.com/watch?v=xnvj0gkrgss&amp;t=6717s">https://www.youtube.com/watch?v=xnvj0gkrgss&amp;t=6717s</a></string>
+</resources>
